@@ -32,6 +32,10 @@ build: mcu /usr/local/src/ffmpeg /usr/local/src/x264 /usr/local/src/speex-1.2rc1
 		INCLUDE="-I$(shell pwd)/mcu/mcu/include -I/usr/local/src/ffmpeg/ -I/usr/local/src/x264 -I/usr/local/src/speex-1.2rc1/include -I/usr/local/src/opus-1.0.2/include -I/usr/local/src/libvpx -I/usr/local/src/webrtc/trunk/webrtc -I/usr/local/src/webrtc/trunk -I/usr/local/src/xmlrpc-c-1.16.35" \
 		LDFLAGS="-pthread /usr/lib/x86_64-linux-gnu/libbz2.a /usr/local/src/ffmpeg/libavcodec/libavcodec.a /usr/local/src/ffmpeg/libavdevice/libavdevice.a /usr/local/src/ffmpeg/libavfilter/libavfilter.a /usr/local/src/ffmpeg/libavformat/libavformat.a /usr/local/src/ffmpeg/libavresample/libavresample.a /usr/local/src/ffmpeg/libavutil/libavutil.a /usr/local/src/ffmpeg/libpostproc/libpostproc.a /usr/local/src/ffmpeg/libswresample/libswresample.a /usr/local/src/ffmpeg/libswscale/libswscale.a /usr/local/src/x264/libx264.a /usr/local/src/speex-1.2rc1/libspeex/.libs/libspeex.a /usr/local/src/speex-1.2rc1/libspeex/.libs/libspeexdsp.a /usr/local/src/opus-1.0.2/.libs/libopus.a /usr/local/src/libvpx/libvpx.a /usr/local/src/libvpx/libgtest.a /usr/local/src/xmlrpc-c-1.16.35/src/cpp/libxmlrpc_cpp.a /usr/local/src/xmlrpc-c-1.16.35/src/cpp/libxmlrpc++.a /usr/local/src/xmlrpc-c-1.16.35/src/cpp/libxmlrpc_server++.a /usr/local/src/xmlrpc-c-1.16.35/src/cpp/libxmlrpc_server_cgi++.a /usr/local/src/xmlrpc-c-1.16.35/src/cpp/libxmlrpc_server_pstream++.a /usr/local/src/xmlrpc-c-1.16.35/src/cpp/libxmlrpc_packetsocket.a /usr/local/src/xmlrpc-c-1.16.35/src/cpp/libxmlrpc_server_abyss++.a /usr/local/src/xmlrpc-c-1.16.35/src/libxmlrpc.a /usr/local/src/xmlrpc-c-1.16.35/src/libxmlrpc_server.a /usr/local/src/xmlrpc-c-1.16.35/src/libxmlrpc_server_abyss.a /usr/local/src/xmlrpc-c-1.16.35/src/libxmlrpc_server_cgi.a /usr/local/src/xmlrpc-c-1.16.35/lib/abyss/src/libxmlrpc_abyss.a /usr/local/src/xmlrpc-c-1.16.35/lib/expat/xmltok/libxmlrpc_xmltok.a /usr/local/src/xmlrpc-c-1.16.35/lib/expat/xmlparse/libxmlrpc_xmlparse.a /usr/local/src/xmlrpc-c-1.16.35/lib/libutil/libxmlrpc_util.a /usr/local/src/mp4v2/.libs/libmp4v2.a /usr/local/src/webrtc/trunk/out/Release/obj/webrtc/common_audio/libcommon_audio.a -lva -lrt -lgsm -lz -lsrtp -lcrypto -lxmlrpc -lbz2"
 
+install:
+	sudo make -C mcu/mcu DEBUG=no install
+	sudo make -C mcu/mcu DEBUG=yes install
+
 clean:
 	make -C mcu/mcu clean
 	rm -fr mcu/mcu/build mcu/mcu/bin
@@ -107,5 +111,5 @@ mcu: dependencies
 	svn checkout svn://svn.code.sf.net/p/mcumediaserver/code/trunk mcu
 	touch $@
 
-#	apt-get -y install make build-essential libgsm1-dev libspeex-dev libavcodec-dev libspeex-dev libspeexdsp-dev
+#	apt-get -y install make build-essential libgsm1-dev libspeex-dev libavcodec-dev libspeex-dev libspeexdsp-dev libxmlrpc-core-c3-dev
 #	dpkg -i libopus0_1.0.1-0ubuntu1_amd64.deb libopus-dev_1.0.1-0ubuntu1_amd64.deb

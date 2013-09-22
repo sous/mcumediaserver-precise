@@ -1,3 +1,20 @@
+Package: mcumediaserver
+Version: 20130922-1
+Architecture: amd64
+Maintainer: Git Sous <gitsous@gmail.com>
+Installed-Size: 13299
+Depends: libbz2-1.0, libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libgsm1 (>= 1.0.13), libsrtp0, libssl1.0.0 (>= 1.0.0), libstdc++6 (>= 4.6), libva1 (>> 1.0.15~), libxmlrpc-core-c3, zlib1g (>= 1:1.2.0.2)
+Homepage: http://github.com/sous/mcumediaserver-precise
+Priority: extra
+Section: comm
+Filename: pool/main/m/mcumediaserver/mcumediaserver_20130922-1_amd64.deb
+Size: 5884492
+SHA256: e008f586ebe22b2ee3735b212a3bf504340e943cd975d27a5aa72b888f8a3eec
+SHA1: 2ded94e307227ebd0a3a9c5bbcdef17a3e97902c
+MD5sum: 6368e6ed54c92c16678ad7e6652fcd63
+Description: mcu mediaserver mediamixer runtime
+ This includes the static binaries built from the mcumediaserver project's mcu folder.
+
 Package: yasm
 Version: 1.2.0-1
 Architecture: amd64
