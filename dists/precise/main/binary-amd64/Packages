@@ -1,0 +1,21 @@
+Package: yasm
+Version: 1.2.0-1
+Architecture: amd64
+Maintainer: Sam Hocevar <sho@debian.org>
+Installed-Size: 1596
+Depends: libc6 (>= 2.14)
+Homepage: http://www.tortall.net/projects/yasm/
+Priority: optional
+Section: devel
+Filename: pool/main/y/yasm/yasm_1.2.0-1_amd64.deb
+Size: 642528
+SHA256: 4c1bad9e91a64d203c076d2a4edb092615deeb42ce15c175462b94beb2757059
+SHA1: 411462582b332b25ab97a44e18a934671a13dd70
+MD5sum: e2de83a4a244b00545c6579b3c20d642
+Description: modular assembler with multiple syntaxes support
+ Yasm is a complete rewrite of the NASM assembler. It supports multiple
+ assembler syntaxes (eg, NASM, GAS, TASM, etc.) in addition to multiple
+ output object formats (binary objects, COFF, Win32, ELF32, ELF64) and
+ even multiple instruction sets (including AMD64). It also has an
+ optimiser module.
+

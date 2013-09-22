@@ -1,0 +1,37 @@
+Origin: raw.github.com
+Label: apt repository
+Codename: precise
+Date: Sun, 22 Sep 2013 01:25:54 UTC
+Architectures: amd64 i386
+Components: main
+Description: GnuGK packages
+MD5Sum:
+ 2202fca0793de83c5597f44807b22333 807 main/binary-amd64/Packages
+ b94383bd0309d0bc920de541ffd41309 558 main/binary-amd64/Packages.gz
+ e49ebfa6ac87a00aa03b3e15e91d7eaf 109 main/binary-amd64/Release
+ d41d8cd98f00b204e9800998ecf8427e 0 main/binary-i386/Packages
+ 7029066c27ac6f5ef18d660d5741979a 20 main/binary-i386/Packages.gz
+ 1fdebc28a60c7a528e9847cd1425ef54 108 main/binary-i386/Release
+ d41d8cd98f00b204e9800998ecf8427e 0 main/source/Sources
+ 7029066c27ac6f5ef18d660d5741979a 20 main/source/Sources.gz
+ 07e8bbd4e1fe65549a6558a9c2f3b192 110 main/source/Release
+SHA1:
+ 6c5dcb98487ff8dc274c4ba609a6ade8319f052e 807 main/binary-amd64/Packages
+ 6361be9364c5cdba929ff8e995f7e424bdc71d55 558 main/binary-amd64/Packages.gz
+ 9b659564505460c408a4f3796f36698105378b01 109 main/binary-amd64/Release
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/binary-i386/Packages
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/binary-i386/Packages.gz
+ 43253ebc8a21f3905003a3937b94c9598882682b 108 main/binary-i386/Release
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/source/Sources
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/source/Sources.gz
+ 55319c71524a24245d2ad1f8647bb70ea431d128 110 main/source/Release
+SHA256:
+ 07e7f5c43036e6ef833ff1b1e77dc6b4876626143162975db32019e05a06dc76 807 main/binary-amd64/Packages
+ d4789c7a8cf7baff72c62329c5b8b24e9a6ff5a81fa10b3fca0e6e7265162475 558 main/binary-amd64/Packages.gz
+ d265136751c08454a3682e157ab57cc781318a50b146eaed586edbdf3d29309d 109 main/binary-amd64/Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-i386/Packages
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/binary-i386/Packages.gz
+ a9d6f37226e9ea77c86688fd3fac27df2150d6dd8f34c55cb0a322ba152dfc90 108 main/binary-i386/Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/source/Sources
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/source/Sources.gz
+ 0ed99a66db2e6b6e506aa738fa73d7e49e1a96feecb400e6087238f9beffcbbc 110 main/source/Release
